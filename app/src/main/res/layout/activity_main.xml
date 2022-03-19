@@ -17,7 +17,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
 
-    <com.yfoo.bottom.nav.BottomNavigationBar
+    <com.yfoo.bottom.library.BottomNavigationBar
         android:id="@+id/bottomNavigationBar"
         android:layout_width="match_parent"
         android:layout_height="90dp"
