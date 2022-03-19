@@ -4,10 +4,10 @@
 
 project build.gradle引入Maven地址
  
-  dependencies {
-    ...
-      implementation'org.route.BottomNavigationBar:1.0.0' 
-  }
+    dependencies {
+       ...
+       implementation'org.route.BottomNavigationBar:1.0.0' 
+    }
       
       
       
