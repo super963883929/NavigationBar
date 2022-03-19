@@ -9,6 +9,6 @@ project build.gradle引入Maven地址
        implementation'org.route.BottomNavigationBar:1.0.0' 
     }
       
-      
+ 搞了半天不知道怎么搞,要用的话就直接下载吧,搞不了     
       
 ![这是一张图片](https://raw.githubusercontent.com/super963883929/NavigationBar/master/nav_bar.jpg)
