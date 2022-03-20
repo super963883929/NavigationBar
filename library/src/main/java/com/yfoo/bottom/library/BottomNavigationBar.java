@@ -154,26 +154,33 @@ public class BottomNavigationBar extends LinearLayout implements View.OnClickLis
 
         int high = 90;//底部导航的高度
         int marginTop = 30;//剧顶边高度
+        Log.d("onDraw", "width:" + width);
+        Log.d("onDraw", "width:" + dip2px(120));
+        Log.d("onDraw", "width:" + dip2px(130));
+        Log.d("onDraw", "width:" + dip2px(140));
+        int x1 = (int)width/3; //120 参考1080/3
+        int x2 = (int)(width/2.8); //130  参考1080/2.8
+        int x3 = (int)(width/2.6); //140  参考1080/2.6
 
-        a.x = dip2px(110);
+        a.x = x1; //dip2px(120)
         a.y = dip2px(marginTop);
-        b.x = dip2px(130);
+        b.x = x2; //dip2px(130)
         b.y = dip2px(marginTop);
-        c.x = dip2px(140);
+        c.x = x3; //dip2px(140)
         c.y = dip2px(marginTop-10);
 
         a2.x = c.x;
         a2.y = c.y;
         b2.x = width / 2;
         b2.y = dip2px(-10);
-        c2.x = width - dip2px(140);
+        c2.x = width - x3; //dip2px(140)
         c2.y = dip2px(marginTop-10);
 
         a3.x =  c2.x;
         a3.y =  c2.y;
-        b3.x =  width - dip2px(130);
+        b3.x =  width - x2; //dip2px(130)
         b3.y = dip2px(marginTop);
-        c3.x = width-dip2px(110);
+        c3.x = width - x1; //dip2px(120)
         c3.y = dip2px(marginTop);
 
         paint.setColor(Color.WHITE);
